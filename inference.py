@@ -5,7 +5,6 @@ from openai import OpenAI
 
 API_BASE_URL = os.getenv("API_BASE_URL", "https://shivanshd-meh.hf.space")
 MODEL_NAME = os.getenv("MODEL_NAME", "meta-llama/Llama-3.3-70B-Instruct")
-# use a sensible env var name — set HF_TOKEN in your environment
 HF_TOKEN = os.getenv("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")
 
 if not HF_TOKEN:
@@ -45,8 +44,3 @@ for ep in range(1, 4):
     time.sleep(0.8)
 
 print("[END]")
-
-  print(f"[STEP] episode={ep} reward={step_res.get('reward', 0)}") 
-    time.sleep(0.8)
-
-print("[END]") 
