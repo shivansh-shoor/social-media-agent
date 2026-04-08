@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {"username": "alice_gram", "caption": "Sunset at the beach was absolutely magical!", "likes": 342, "platform": "instagram"},
+    {"username": "bob_photos", "caption": "My homemade pasta turned out perfect today.", "likes": 128, "platform": "instagram"}
+  ],
+  "threads": [
+    {"username": "shivansh", "content": "Planning a trip to Goa with Rahul and Priya next month!", "replies": 14},
+    {"username": "priya", "content": "Can't wait for Goa! Should we book the beach hotel?", "replies": 9}
+  ],
+  "chats": [
+    {
+      "chat_name": "Goa Trip",
+      "messages": [
+        {"sender": "Rahul", "message": "I'll book the hotel near the beach."},
+        {"sender": "Priya", "message": "Perfect! Shivansh you handle the flights?"},
+        {"sender": "Shivansh", "message": "Sure, I'm on it!"}
+      ]
+    },
+    {
+      "chat_name": "Birthday Planning",
+      "messages": [
+        {"sender": "Rahul", "message": "Let's get Priya a necklace for her birthday."},
+        {"sender": "Shivansh", "message": "I'll contribute 2000 rupees."},
+        {"sender": "Rahul", "message": "I'll put in 3000. That should be enough for a nice one."}
+      ]
+    }
+  ]
+}

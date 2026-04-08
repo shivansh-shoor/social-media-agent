@@ -1,0 +1,9 @@
+name: social-memory-openenv
+version: "1.0"
+description: Personal Social Memory Agent for OpenEnv Round 1. Agent extracts facts, summarizes threads, and answers multi-hop questions from Instagram, Threads, and WhatsApp data.
+author: Shivansh Dev Shoor
+tasks:
+  - fact_extraction
+  - thread_summary
+  - multi_hop_qa
+reward_range: [0.0, 1.0]
