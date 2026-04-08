@@ -5,7 +5,7 @@ from openai import OpenAI
 
 API_BASE_URL = os.getenv("API_BASE_URL", "https://shivanshd-meh.hf.space")
 MODEL_NAME = os.getenv("MODEL_NAME", "your-active-model")
-HF_TOKEN = os.getenv("HF_TOKEN")
+HF_TOKEN = os.getenv("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")
 
 client = OpenAI(base_url=API_BASE_URL, api_key=HF_TOKEN)
 
