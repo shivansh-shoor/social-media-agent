@@ -5,7 +5,14 @@ from openai import OpenAI
 
 API_BASE_URL = os.getenv("API_BASE_URL", "https://shivanshd-meh.hf.space")
 MODEL_NAME = os.getenv("MODEL_NAME", "meta-llama/Llama-3.3-70B-Instruct")
-HF_TOKEN = os.getenv("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")
+# Fix: use the env var name you expect (HF_TOKEN). Don't hardcode the token name as the key.
+HF_TOKEN = os.getenv("HF_TOKEN")
+
+# Debug: print working dir and env info (remove or reduce in production)
+print("cwd:", os.getcwd())
+print("API_BASE_URL:", API_BASE_URL)
+print("MODEL_NAME:", MODEL_NAME)
+print("HF_TOKEN set:", bool(HF_TOKEN))
 
 if not HF_TOKEN:
     raise RuntimeError("HF_TOKEN environment variable is not set")
