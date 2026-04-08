@@ -9,7 +9,7 @@ HF_TOKEN = os.getenv("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")
 
 client = OpenAI(base_url=API_BASE_URL, api_key=HF_TOKEN)
 
-print("START")
+print("[START]") 
 
 for ep in range(1, 4):
     res = requests.post(f"{API_BASE_URL}/reset").json()
@@ -24,7 +24,7 @@ for ep in range(1, 4):
 
     step_res = requests.post(f"{API_BASE_URL}/step", json={"action": "answer", "query": answer}).json()
 
-    print(f"STEP episode={ep} reward={step_res.get('reward', 0)}")
+  print(f"[STEP] episode={ep} reward={step_res.get('reward', 0)}") 
     time.sleep(0.8)
 
-print("END")
+print("[END]") 
