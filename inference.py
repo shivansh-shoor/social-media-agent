@@ -3,7 +3,7 @@ import requests
 import time
 from openai import OpenAI
 
-API_BASE_URL = os.getenv("API_BASE_URL", "https://huggingface.co/spaces/SHIVANSHD/MEH")
+API_BASE_URL = os.getenv("API_BASE_URL", "https://shivanshd-meh.hf.space")
 MODEL_NAME = os.getenv("MODEL_NAME", "meta-llama/Llama-3.3-70B-Instruct")
 HF_TOKEN = os.getenv("HF_TOKEN")
 
