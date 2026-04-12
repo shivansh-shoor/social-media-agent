@@ -1,0 +1,12 @@
+[project]
+name = "social-memory-openenv"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["fastapi", "uvicorn", "openai", "requests"]
+
+[project.scripts]
+openenv-server = "server.app:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
