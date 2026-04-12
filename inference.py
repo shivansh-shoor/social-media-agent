@@ -7,7 +7,7 @@ from openai import OpenAI
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
 API_BASE_URL = os.getenv("API_BASE_URL", "https://shivanshd-meh.hf.space")
-MODEL_NAME = os.getenv("MODEL_NAME", "meta-llama/Llama-3.3-70B-Instruct")
+HF_TOKEN = os.getenv("HF_TOKEN", "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")
 # Use the expected environment variable name HF_TOKEN
 HF_TOKEN = os.getenv("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")
 
