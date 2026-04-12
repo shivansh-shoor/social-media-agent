@@ -8,11 +8,9 @@ author: Shivansh Dev Shoor
 reward_range: [0.0, 1.0]
 
 tasks:
-  - name: fact_extraction
-    description: Extract key facts from social media posts
-    grader:
-      type: exact_match
-      field: answer
+  - fact_extraction
+  - thread_summary
+  - multi_hop_qa
 
   - name: thread_summary
     description: Summarize a conversation thread
