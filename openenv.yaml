@@ -21,7 +21,7 @@ tasks:
       field: answer
 
   - name: multi_hop_qa
-    description: Answer multi-hop questions across sources
+    description: Answer multi-hop questions from social data
     grader:
       type: exact_match
       field: answer
