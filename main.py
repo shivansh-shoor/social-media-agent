@@ -5,7 +5,7 @@ import json, uuid, random, os
 
 app = FastAPI(title="Social Memory OpenEnv", version="1.0.0")
 
-DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "sample_data.json")
+DATA_PATH = os.path.join(os.path.dirname(__file__), "sample_data.json")
 with open(DATA_PATH) as f:
     DATA = json.load(f)
 
